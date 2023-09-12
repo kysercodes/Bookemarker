@@ -9,18 +9,131 @@
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
-  <div>
-    <h1 class="text-center text-red-500">Hello Worlds</h1>
-  </div>
+  
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
-<body>
+<body class="w-screen h-screen">
 
+  <header class="max-w-5xl mx-auto mt-8">
+    <nav class=" flex flex-row justify-between">
+      <div>
+        <img class="hover:cursor-pointer" src="/images/logo-bookmark.svg" alt="">
+      </div>
+      <ul class="flex flex-row justify-between space-x-8">
+        <li  ><a class="hover:text-carnation-400  focus:text-carnation-500 transition duration-150 ease-out hover:ease-in" href="#feature">Features</a></li>
+        <li><a class="hover:text-carnation-400  focus:text-carnation-500 transition duration-150 ease-out hover:ease-in" href="#">Pricing</a></li>
+        <li><a class="hover:text-carnation-400 focus:text-carnation-500 transition duration-160 ease-out hover:ease-in" href="#">Contact</a></li>
+        <button class="shadow-lg bg-carnation-500 hover:bg-white hover:text-carnation-400  focus:bg-white  focus:text-carnation-500  text-white  py-0.5 px-4 border border-carnation-500 rounded  transition duration-150 ease-out hover:ease-in" >Login</button>
+      </ul>
+    </nav>
+    
+  </header>
+  <main class="relative mx-auto   ">
+    <!-- hero section -->
+    <div class="h-[300px] bg-royal-blue-600  rounded-[30%_0%_0%_30%_/_52%_64%_0%_59%] absolute top-40 -right-9 w-1/3 z-0"> </div>
+     
+    <section class=" max-w-6xl flex flex-row justify-between mx-auto mt-40">
+      <div class=" mt-20 mr-5">
+        <h1 class="text-4xl font-bold">A Simple Bookmark Manager</h1>
+        <p class="mt-8">A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites loaSd instantly. Try it for free.</p>
+          <div class="flex flex-row justify-between mt-8">
+            <button class="shadow-lg bg-royal-blue-700 hover:bg-white hover:text-royal-blue-700  focus:bg-white font-semibold  focus:text-royal-blue-700  text-white  py-2 px-4 border border-royal-blue-500 rounded  transition duration-150 ease-out hover:ease-in"> Get it on Chrome</button>
+            <button class="shadow-2xl mr-16  bg-white hover:border-black   focus:bg-white font-semibold  focus:text-black focus:border-black  text-black  py-2 px-4  border-2 rounded  transition duration-150 ease-out hover:ease-in"> Get it on Firefox</button>
+          </div>
+      </div>
+      <img class="z-10 w-auto" src="/images/illustration-hero.svg" alt="">
+    </section>
+    <!-- Feature choice section -->
+    
+    <section class="max-w-4xl mx-auto text-center mt-32 border-b-4 mb-6 ">
+      <h1 class="text-4xl font-bold ">  Features</h1>
+      <p class="w-2/3 mx-auto mt-5 font-semibold text-gray-500">  Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+        <div class="mt-10  w-auto  ">
+          <ul id="features" class="flex flex-row justify-between w-2/3 mx-auto ">
+            <li id="simple">  <a  class="pb-10 hover:text-carnation-400  focus:border-carnation-400 focus:border-b-4 focus:text-carnation-500 transition duration-150 ease-out hover:ease-in"  href="#feature">Simple Bookmarking</a></li>
+            <li id="speedy"> <a class="pb-10 hover:text-carnation-400  focus:border-carnation-400 focus:border-b-4 focus:text-carnation-500 transition duration-150 ease-out hover:ease-in"  href="#feature">Speedy Searching</a></li>
+            <li id="easy"> <a class="pb-10 hover:text-carnation-400  focus:border-carnation-400 focus:border-b-4 focus:text-carnation-500 transition duration-150 ease-out hover:ease-in"  href="#feature">Easy Sharing</a></li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-auto flex flex-row justify-around mx-auto    mt-40 ">
+      
+       <div class="mx-auto">
+        <img id="feature-img" class="w-auto" src="/images/illustration-features-tab-1.svg" alt="">
+       </div>
+          
+       <div class="mt-20">
+        <h1 id="feature-heading" class="text-4xl font-bold">Bookmark in one click</h1>
+        <p id="feature-paragraph" class="mt-8  w-2/3  text-gray-500 text-sm">
+          Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favorite sites.</p>
+          <div class="flex flex-row justify-between mt-8">
+            <button class="shadow-lg bg-royal-blue-700 hover:bg-white hover:text-royal-blue-700  focus:bg-white font-semibold  focus:text-royal-blue-700  text-white  py-2 px-4 border border-royal-blue-500 rounded  transition duration-150 ease-out hover:ease-in">More Info</button>
+           
+          </div>
+      </div>
+    </section>
+
+    <!-- extension download  heading and info -->
+    <section class="max-w-4xl mx-auto text-center mt-40 ">
+      <h1 class="text-4xl font-bold ">Download the extension</h1>
+      <p class="w-2/3 mx-auto mt-5 font-semibold text-gray-500">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favorite you’d like us to prioritize.</p>
+    </section>
+
+    <!-- extension download cards -->
+    <section class=" p-12 max-w-7xl  mx-auto border  border-gray-400 py-10  ">
+      
+       <div class=" w-1/2 flex flex-row justify-between mx-auto ">
+
+       
+    
+        <div class=" shadow-lg max-w-xl  align-middle  rounded text-center ">
+          
+          <img class="mx-auto p-6 mt-3" src="/images/logo-chrome.svg" alt="">
+          <h1 class="text-4xl  font-bold p-4">Add to Chrome</h1>
+          <p class="py-3 text-3xl font-bold">Minimum version 55</p>
+          <img class=" mb-3 mx-auto p-4 " src="/images/bg-dots.svg" alt="">
+          
+            <button class="  shadow-lg bg-royal-blue-700 hover:bg-white hover:text-royal-blue-700  focus:bg-white font-semibold  focus:text-royal-blue-700  text-white  py-2 px-4 border border-royal-blue-500 rounded  transition duration-150 ease-out hover:ease-in"> Add & install extension</button>
+        
+          
+         
+        </div>
+       
+          <div class=" mt-5 p-14 max-w-lg h-36 border border-gray-500 rounded text-center">
+          <img class=" p-6 mx-auto" src="/images/logo-chrome.svg" alt="">
+          <h1 class=" p-6 text-4xl">Add to Firefox</h1>
+          <p>Minimum version 55</p>
+          <img class="mx-auto w-14" src="/images/bg-dots.svg" alt="">
+          <button class=" shadow-lg bg-royal-blue-700 hover:bg-white hover:text-royal-blue-700  focus:bg-white font-semibold  focus:text-royal-blue-700  text-white  py-2 px-4 border border-royal-blue-500 rounded  transition duration-150 ease-out hover:ease-in"> Add & install extension</button>
+         
+          
+        </div>
+        <div class=" mt-10 p-14 max-w-lg h-20 border border-gray-500 rounded text-center">
+          <div class="p-3">
+          <img class="mx-auto" src="/images/logo-chrome.svg" alt="">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <img class="mx-auto w-14" src="/images/bg-dots.svg" alt="">
+          <button class="shadow-lg bg-royal-blue-700 hover:bg-white hover:text-royal-blue-700  focus:bg-white font-semibold  focus:text-royal-blue-700  text-white  py-2 px-4 border border-royal-blue-500 rounded  transition duration-150 ease-out hover:ease-in"> Add & install extension</button>
+         
+          </div>
+        </div>
+      </div>
+        
+      </section>
+      <section class="mt-28">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos sed odit, est voluptatem debitis soluta illum quaerat voluptates provident in harum, fugit minus modi obcaecati accusamus praesentium quis dolorum aperiam cumque, ipsam repellat quasi. Perferendis nemo ab atque cumque.</p>
+      </section>
+
+  </main>
+<!-- 
   Features
   Pricing
   Contact
@@ -86,35 +199,35 @@
   Here are some of our FAQs. If you have any other questions you’d like 
   answered please feel free to email us.
 
-  <!-- Question 1 -->
-  What is Bookmark?
+ Question 1 -->
+  <!-- What is Bookmark? -->
 
   <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
 
   <!-- Question 2 -->
-  How can I request a new browser?
+  <!-- How can I request a new browser? -->
 
   <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
   Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
 
   <!-- Question 3 -->
-  Is there a mobile app?
+  <!-- Is there a mobile app? -->
 
   <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
+  sollicitudin ex et ultricies bibendum. -->
 
   <!-- Question 4 -->
-  What about other Chromium browsers?
+  <!-- What about other Chromium browsers? -->
 
   <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
   vitae neque eget nisl gravida pellentesque non ut velit.
 
   More Info
@@ -127,13 +240,14 @@
 
   Features
   Pricing
-  Contact
-  
+  Contact -->
+<!--   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> --> 
+  <script src="/dist/app.js"></script>
 </body>
 </html>
